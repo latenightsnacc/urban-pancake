@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind Css-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Font Awesome 5 CDN-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <title>GRUPA</title>
+</head>
+<body class="bg-gray-100 pt-10 relative">
+    <div class="fixed left-7">
+        <a href="index.html">
+            <div class="h-32 w-32">
+                <img class="w-full" src="./assets/logo/LOGO-shadow.png" >
+            </div>
+        </a>
+        <ul class="flex flex-col">
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl border-gray-100 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-home"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl border-gray-100 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-search"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl border-gray-100 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-user"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl border-gray-100 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-home"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main class="ml-24">
+
+        <!--IMAGE CONTAINER-->
+        <div class="container">
+            <img class="border rounded-3xl" src="./assets/images/NG-en-20210425-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="">
+        </div>
+        <!--END OF IMAGE CONTAINER-->
+
+        <!--SPACER-->
+        <div class="h-8"></div>
+        <!--END OF SPACER-->
+
+        <!--FILTER MENU-->
+        <div class="container">
+            <ul class="flex flex-row w-full shadow-lg h-32 items-center">
+                <li>
+                    <a href="#" class="no-underline text-red-500 font-bold text-base uppercase">
+                        Popular
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--END OF FILTER MENU-->
+
+        <!--SPACER-->
+        <div class="h-8"></div>
+        <!--END OF SPACER-->
+
+        <div class="container">
+            <div class="grid grid-flow-row auto-rows-max md:auto-rows-min  gap-4">
+                <!--MOVIE CARD-->
+                <div class="bg-gray-100 shadow-lg p-2">
+                    <a href="#">
+                        <img src="./assets/images/movie-card.jpeg" alt="" />
+                    </a>
+                    <div class="flex flex-row py-3 space-between">
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                    </div>
+                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
+                </div>
+                <!--END OF MOVIE CARD-->
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4  gap-4">
+                <!--MOVIE CARD-->
+                <div class="bg-gray-100 shadow-lg p-2">
+                    <a href="#">
+                        <img src="./assets/images/movie-card.jpeg" alt="" />
+                    </a>
+                    <div class="flex flex-row py-3 space-between">
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                    </div>
+                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
+                </div>
+                <!--END OF MOVIE CARD-->
+            </div>
+        </div>
+
+        <!--SPACER-->
+        <div class="h-8"></div>
+        <!--END OF SPACER-->
+    </main>
+    
+    <!--bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
