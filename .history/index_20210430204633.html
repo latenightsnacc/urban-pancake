@@ -25,50 +25,47 @@
     </style>
 </head>
 <body class="bg-gray-100 pt-10 relative">
-    <div class="fixed left-0 h-full z-10 xl:left-96 xl:shadow-none lg:shadow-none ">
-        <div class="flex flex-col h-full items-center">
-            <a href="index.html" class="no-underline">
-                <div class="h-32 w-32">
-                    <div class="text-red-600 xl:text-3xl text-2xl hidden md:block text-center uppercase font-semibold">grupa</div>
-                </div>
-            </a>
-            <ul class="flex flex-col ml-0 ">
-                <li class="mb-5">
-                    <a href="index.html" class="flex flex-row items-center justify-center text-lg hover:text-red-600 shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline">
-                        <span class="">
-                            <i class="fas fa-home"></i>
-                        </span>
-                       
-                        <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                    </a>
-                </li>
-                <li class="mb-5">
-                    <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline">
-                        <i class="fas fa-search"></i>
-                        <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                    </a>
-                </li>
-                <li class="mb-5">
-                    <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline">
-                        <i class="fas fa-user"></i>
-                        <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                    </a>
-                </li>
-                <li class="mb-5">
-                    <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline">
-                        <i class="fas fa-angle-down"></i>
-                        <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                    </a>
-                </li>
-                <li class="mb-5">
-                    <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline">
-                        <i class="fas fa-adjust"></i>
-                        <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
+    <div class="fixed left-0 md:left-2">
+        <a href="index.html" class="no-underline">
+            <div class="h-32 w-32">
+                <div class="text-red-600 text-3xl hidden md:block md:ml-10 uppercase font-semibold">grupa</div>
+            </div>
+        </a>
+        <ul class="flex flex-col ml-0 md:ml-7">
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg hover:text-red-600 shadow-xl active:bg-black   rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <span class="bg-gray-900 text-gray-600 rounded-lg p-1">
+                        <i class="fas fa-home"></i>
+                    </span>
+                   
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-search"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-user"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-angle-down"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+            <li class="mb-5">
+                <a href="index.html" class="flex flex-row items-center justify-center text-lg bg-gray-50 shadow-2xl hover:text-red-600 rounded-full h-12 w-12 text-gray-900 no-underline">
+                    <i class="fas fa-adjust"></i>
+                    <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
+                </a>
+            </li>
+        </ul>
     </div>
     <main class="ml-12 md:ml-24">
 
@@ -85,7 +82,7 @@
 
         <!--FILTER MENU-->
         <div class="container sticky-top">
-            <ul class="flex flex-row justify-around w-full z-50  shadow-2xl h-20 items-center rounded-2xl">
+            <ul class="flex flex-row justify-around w-full  shadow-2xl h-20 items-center rounded-2xl">
                 <li class="bg-black p-1 rounded-lg">
                     <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase">
                         Popular
@@ -115,22 +112,19 @@
         <!--END OF SPACER-->
 
         <div class="container">
-            <div class="grid grid-flow-row auto-rows-max md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4">
+            <div class="grid grid-flow-row auto-rows-max md:grid-cols-4  gap-4">
                 <!--MOVIE CARD-->
-                <div class=" shadow-lg  rounded-2xl">
+                <div class="bg-gray-100 shadow-lg p-2">
                     <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
+                        <img src="./assets/images/movie-card.jpeg" alt="" />
                     </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
+                    <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
+                    <div class="flex flex-row py-3 space-between">
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
+                        <span class="text-red-500 capitalize text-sm font-bold px-1"> comedy |</span>
                     </div>
                     <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
                 </div>
                 <!--END OF MOVIE CARD-->
                 <!--MOVIE CARD-->
