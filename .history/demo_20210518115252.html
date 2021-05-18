@@ -24,23 +24,22 @@
         body,div,a,p {
             font-family: 'Poppins', sans-serif;
         }
-        
     </style>
 </head>
 <body class="overflow-x-hidden relative"> 
     <!--LARGE SCREEN >768PX --> 
     <div class="hidden lg:block">
         <!--SIDE NAVIGATION-->
-        <div class="fixed w-32 h-full">
-            <div class="flex flex-col w-32 h-full content-center justify-center text-center">
-                <a href="index.html" class="no-underline hover:no-underline">
+        <div class="fixed w-32 h-full bg-black">
+            <div class="flex flex-col w-full h-full items-center justify-center text-center">
+                <a href="index.html" class="no-underline pt-8">
                     <div class="h-32 w-32">
-                        <div class="pt-8 text-red-600 xl:text-3xl text-2xl hidden md:block text-center uppercase font-semibold">grupa</div>
+                        <div class="text-red-600 xl:text-3xl text-2xl hidden md:block text-center uppercase font-semibold">grupa</div>
                     </div>
                 </a>
-                <ul class="flex flex-col w-full content-center justify-center ">
+                <ul class="flex flex-col w-full items-center justify-center ">
                     <li class="mb-5">
-                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline ">
+                        <a href="index.html" class="flex flex-row items-center justify-center text-lg hover:text-red-600 shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
                             <span class="">
                                 <i class="fas fa-home"></i>
                             </span>
@@ -49,25 +48,25 @@
                         </a>
                     </li>
                     <li class="mb-5">
-                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
+                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
                             <i class="fas fa-search"></i>
                             <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
                         </a>
                     </li>
                     <li class="mb-5">
-                        <a href="login.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
+                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
                             <i class="fas fa-user"></i>
                             <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
                         </a>
                     </li>
                     <li class="mb-5">
-                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
+                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
                             <i class="fas fa-angle-down"></i>
                             <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
                         </a>
                     </li>
                     <li class="mb-5">
-                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
+                        <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl hover:text-red-600 rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
                             <i class="fas fa-adjust"></i>
                             <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
                         </a>
@@ -99,22 +98,22 @@
             <div class="container sticky-top">
                 <ul class="flex flex-row justify-around w-full z-50  shadow-2xl h-20 items-center rounded-2xl">
                     <li class="bg-black p-1 rounded-lg">
-                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
+                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase">
                             Popular
                         </a>
                     </li>
                     <li class="bg-black p-1 rounded-lg">
-                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
+                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase">
                             now playing
                         </a>
                     </li>
                     <li class="bg-black p-1 rounded-lg">
-                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
+                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase">
                             top rated
                         </a>
                     </li>
                     <li class="bg-black p-1 rounded-lg">
-                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
+                        <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase">
                             upcoming
                         </a>
                     </li>
@@ -126,7 +125,6 @@
             <div class="h-8"></div>
             <!--END OF SPACER-->
     
-            <!--MOVIES LIST-->
             <div class="container">
                 <div class="grid grid-flow-row auto-rows-max md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 " uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                     <!--MOVIE CARD-->
@@ -234,8 +232,7 @@
                     
                 </div>
             </div>
-            <!--END OF MOVIES LIST-->
-
+    
             <!--SPACER-->
             <div class="h-8"></div>
             <!--END OF SPACER-->
@@ -247,188 +244,7 @@
     <!--SMALL SCREEN 768PX AND BELOW-->
     <div class="lg:hidden">
         <!--TOP NAVIGATION-->
-        <div class="h-auto w-full">
-            <div class="container">
-                <div class="flex flex-row items-center h-full justify-between">
-                    <a href="index.html" class="no-underline hover:no-underline">
-                        <div class="text-red-600 xl:text-3xl text-2xl uppercase font-semibold">grupa</div>
-                    </a> 
-                    <!-- <a href="login.html" class="flex flex-row items-center justify-center text-lg rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
-                        <i class="fas fa-user"></i>
-                     
-                    </a> -->
-                    <ul class="flex flex-row">
-                        
-                        <li class="ml-5">
-                            <a href="login.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
-                                <i class="fas fa-user"></i>
-                                <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                            </a>
-                        </li>
-                        
-                        <li class="ml-5">
-                            <a href="index.html" class="flex flex-row items-center justify-center text-lg  shadow-xl  rounded-full h-12 w-12 text-red-600 no-underline hover:no-underline">
-                                <i class="fas fa-adjust"></i>
-                                <!-- <span class="ml-2 hidden md:block capitalize text-sm">home</span> -->
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--END OF TOP NAVIGATION-->
-
-        <!--SPACER-->
-        <div class="h-4"></div>
-        <!--END OF SPACER-->
-
-        <!--IMAGE CONTAINER-->
-        <div class="container">
-            <img class="border rounded-3xl" src="./assets/images/NG-en-20210425-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="">
-        </div>
-        <!--END OF IMAGE CONTAINER-->
-
-        <!--SPACER-->
-        <div class="h-4"></div>
-        <!--END OF SPACER-->
-
-        <!--FILTER MENU-->
-        <div class="container sticky-top">
-            <ul class="flex flex-row justify-around w-full z-50  shadow-2xl h-20 items-center rounded-2xl">
-                <li class="bg-black p-1 rounded-lg">
-                    <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
-                        Popular
-                    </a>
-                </li>
-                <li class="bg-black p-1 rounded-lg">
-                    <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
-                        now playing
-                    </a>
-                </li>
-                <li class="bg-black p-1 rounded-lg">
-                    <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
-                        top rated
-                    </a>
-                </li>
-                <li class="bg-black p-1 rounded-lg">
-                    <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
-                        upcoming
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--END OF FILTER MENU-->
-
-        <!--MOVIES LIST-->
-        <div class="container">
-            <div class="grid grid-flow-row auto-rows-max md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 " uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
-                <!--MOVIE CARD-->
-                <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                    <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                    </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                    </div>
-                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
-                </div>
-                <!--END OF MOVIE CARD-->
-                <!--MOVIE CARD-->
-                <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                    <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                    </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                    </div>
-                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
-                </div>
-                <!--END OF MOVIE CARD-->
-                <!--MOVIE CARD-->
-                <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                    <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                    </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                    </div>
-                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
-                </div>
-                <!--END OF MOVIE CARD-->
-                <!--MOVIE CARD-->
-                <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                    <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                    </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                    </div>
-                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
-                </div>
-                <!--END OF MOVIE CARD-->
-                <!--MOVIE CARD-->
-                <div class=" transition duration-200 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                    <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                    </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                    </div>
-                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
-                </div>
-                <!--END OF MOVIE CARD-->
-                <!--MOVIE CARD-->
-                <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                    <a href="#">
-                        <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                    </a>
-                    <div class="px-2">
-                        <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                        <div class="flex flex-row space-between  ">
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                        <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                    </div>
-                    <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
-                    </div>
-                    
-                </div>
-                <!--END OF MOVIE CARD-->
-                
-            </div>
-        </div>
-        <!--END OF MOVIES LIST-->
-
+        <!--END OF NAVIGATION-->
     </div>
     <!--END OF SMALL SCREEN-->
     
