@@ -139,13 +139,13 @@
     
             <!--MOVIES LIST-->
             <div class="container">
-                <div class="grid grid-flow-row auto-rows-max md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 " uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                <div class="grid grid-cols-4 auto-rows-max gap-4 " uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                        <a href="#">
-                            <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
+                    <div class="flex flex-row transition duration-500 ease-in-out transform hover:-translate-x-4 h-48 md:h-72 shadow-lg rounded-2xl">
+                        <a href="#" class="w-1/3">
+                            <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl h-auto" />
                         </a>
-                        <div class="px-2">
+                        <div class="px-2 w-2/3">
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
@@ -158,11 +158,11 @@
                     </div>
                     <!--END OF MOVIE CARD-->
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
+                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4 rounded-2xl group hover:shadow-2xl p-5">
                         <a href="#">
                             <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
                         </a>
-                        <div class="px-2">
+                        <div class="px-2 opacity-0 group-hover:opacity-100">
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>

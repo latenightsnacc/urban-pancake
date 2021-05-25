@@ -19,7 +19,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/css/uikit.min.css" />
     <title>GRUPA</title>
     <style>
+        .bg-black {
+            background-color: #00171f !important;
+        }
+        .text-red-600 {
+            color: #bb0a21 !important;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+        .logo-font {
+            font-family: 'Patrick Hand SC', cursive;
+        }
 
         body,div,a,p {
             font-family: 'Poppins', sans-serif;
@@ -27,7 +38,7 @@
         
     </style>
 </head>
-<body class="overflow-x-hidden relative"> 
+<body class="overflow-x-hidden relative bg-black"> 
     <!--LARGE SCREEN >768PX --> 
     <div class="hidden lg:block">
         <!--SIDE NAVIGATION-->
@@ -35,7 +46,7 @@
             <div class="flex flex-col w-32 h-full content-center justify-center text-center">
                 <a href="index.html" class="no-underline hover:no-underline">
                     <div class="h-32 w-32">
-                        <div class="pt-8 text-red-600 xl:text-3xl text-2xl uppercase font-semibold">grupa</div>
+                        <div class="pt-8 text-red-600 xl:text-3xl text-2xl uppercase font-semibold logo-font">grupa</div>
                     </div>
                 </a>
                 <ul class="flex flex-col w-full content-center justify-center ">
@@ -82,14 +93,14 @@
         <!--END OF SPACER-->
 
         <!--MAIN CONTENT-->
-        <div class="ml-32">
-
+        <div class="ml-16">
+            <div class="h-4"></div>
             <!--IMAGE CONTAINER-->
             <div class="container relative" >
                 <div class="uk-overflow-hidden">
                     <img class="border rounded-3xl filter brightness-50" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="./assets/images/NG-en-20210425-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="">
                 </div>
-                <div class="absolute bottom-16 xl:bottom-32 left-16 w-50">
+                <div class="absolute bottom-16 xl:bottom-24 left-16 w-50">
                     <h1 class="font-bold text-white text-7xl capitalize">harley quinn</h1>
                     <div class="flex flex-row space-between  ">
                         <span class="text-2xl text-white font-semibold capitalize px-1"> comedy </span>
@@ -109,22 +120,22 @@
             <!--FILTER MENU-->
             <div class="container sticky-top">
                 <ul class="flex flex-row  w-full justify-around z-50  shadow-2xl h-20 items-center rounded-2xl">
-                    <li class="bg-black p-1 rounded-lg">
+                    <li class="bg-black p-2 rounded-lg">
                         <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
                             Popular
                         </a>
                     </li>
-                    <li class="bg-black p-1 rounded-lg">
+                    <li class="bg-black p-2 rounded-lg">
                         <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
                             now playing
                         </a>
                     </li>
-                    <li class="bg-black p-1 rounded-lg">
+                    <li class="bg-black p-2 rounded-lg">
                         <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
                             top rated
                         </a>
                     </li>
-                    <li class="bg-black p-1 rounded-lg mr-5">
+                    <li class="bg-black p-2 rounded-lg mr-5">
                         <a href="#" class="no-underline text-red-500 font-bold text-xs md:text-sm uppercase hover:text-yellow-400 hover:no-underline">
                             upcoming
                         </a>
@@ -139,30 +150,23 @@
     
             <!--MOVIES LIST-->
             <div class="container">
-                <div class="grid grid-flow-row auto-rows-max md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 " uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                <div class="grid grid-cols-3 auto-rows-max gap-4 " uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
+                    <div class="relative transition duration-500 ease-in-out rounded-2xl group hover:shadow-2xl">
                         <a href="#">
                             <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
                         </a>
-                        <div class="px-2">
-                            <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
-                            <div class="flex flex-row space-between  ">
-                            <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                            <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
-                            <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
+                        <div class="absolute -top-5 left-2">
+                            <div class="w-14 h-14 flex justify-center items-center bg-black font-bold text-red-600 shadow-2xl rounded-full">
+                                9.8
                             </div>
-                            <span class="text-sm px-1 text-gray-700 capitalize">release date: 12th June 2031</span>
                         </div>
-                        
-                    </div>
-                    <!--END OF MOVIE CARD-->
-                    <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
-                        <a href="#">
-                            <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
-                        </a>
-                        <div class="px-2">
+                        <div class="px-2 opacity-0 group-hover:opacity-100">
+                            <div class="flex flex-row justify-between">
+                                <div class="h-14 w-14 rounded-full">
+
+                                </div>
+                            </div>
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
@@ -175,11 +179,11 @@
                     </div>
                     <!--END OF MOVIE CARD-->
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
+                    <div class=" transition duration-500 ease-in-out rounded-2xl group hover:shadow-2xl">
                         <a href="#">
                             <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
                         </a>
-                        <div class="px-2">
+                        <div class="px-2 opacity-0 group-hover:opacity-100">
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
@@ -192,11 +196,11 @@
                     </div>
                     <!--END OF MOVIE CARD-->
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
+                    <div class=" transition duration-500 ease-in-out rounded-2xl group hover:shadow-2xl">
                         <a href="#">
                             <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
                         </a>
-                        <div class="px-2">
+                        <div class="px-2 opacity-0 group-hover:opacity-100">
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
@@ -209,11 +213,11 @@
                     </div>
                     <!--END OF MOVIE CARD-->
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-200 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
+                    <div class=" transition duration-500 ease-in-out rounded-2xl group hover:shadow-2xl">
                         <a href="#">
                             <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
                         </a>
-                        <div class="px-2">
+                        <div class="px-2 opacity-0 group-hover:opacity-100">
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
@@ -225,12 +229,13 @@
                         
                     </div>
                     <!--END OF MOVIE CARD-->
+                    
                     <!--MOVIE CARD-->
-                    <div class=" transition duration-500 ease-in-out transform hover:-translate-y-4  shadow-lg rounded-2xl">
+                    <div class=" transition duration-500 ease-in-out rounded-2xl group hover:shadow-2xl">
                         <a href="#">
                             <img src="./assets/images/movie-card.jpeg" alt="" class="rounded-2xl" />
                         </a>
-                        <div class="px-2">
+                        <div class="px-2 opacity-0 group-hover:opacity-100">
                             <div class="text-black font-bold capitalize pl-1 pt-1 text-lg">suicide squad</div>
                             <div class="flex flex-row space-between  ">
                             <span class="text-red-500 capitalize text-sm px-1"> comedy </span>
@@ -242,6 +247,7 @@
                         
                     </div>
                     <!--END OF MOVIE CARD-->
+                    
                     
                 </div>
             </div>
@@ -293,11 +299,22 @@
         <div class="h-4"></div>
         <!--END OF SPACER-->
 
-        <!--IMAGE CONTAINER-->
-        <div class="container">
-            <img class="border rounded-3xl" src="./assets/images/NG-en-20210425-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="">
+       <!--IMAGE CONTAINER-->
+       <div class="container relative" >
+        <div class="uk-overflow-hidden">
+            <img class="border rounded-3xl filter brightness-50" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="./assets/images/NG-en-20210425-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="">
         </div>
-        <!--END OF IMAGE CONTAINER-->
+        <div class="absolute bottom-16 xl:bottom-32 left-16 w-50">
+            <h1 class="font-bold text-white text-7xl capitalize">harley quinn</h1>
+            <div class="flex flex-row space-between  ">
+                <span class="text-2xl text-white font-semibold capitalize px-1"> comedy </span>
+                <span class="text-2xl text-white font-semibold capitalize px-1"> comedy </span>
+                <span class="text-2xl text-white font-semibold capitalize px-1"> comedy </span>
+            </div>
+            <p class="text-white break-words">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus cumque ut id voluptatem nesciunt perspiciatis eaque rem accusantium incidunt laboriosam dolorem, numquam magni possimus at cum, ducimus eveniet voluptatibus nulla!</p>
+        </div>
+    </div>
+    <!--END OF IMAGE CONTAINER-->
 
         <!--SPACER-->
         <div class="h-4"></div>
